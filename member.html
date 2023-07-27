@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/member.css">
+    <link rel="shortcut icon" href="image/favicon.png">
+</head>
+
+<body>
+    <header class="header">
+        <a href="mobile.html" class="back"><img src="image/back.png" alt="뒤로가기 버튼"></a>
+        <h3>회원가입</h3>
+        <a href="mobile.html" class="cross"><img src="image/cross.png" alt="닫기 버튼"></a>
+    </header>
+    <fieldset class="box">
+        <legend class="skip">회원가입</legend>
+        <form action="insert.php" class="cf" method="post">
+            <div class="join">
+                <label class="skip" for="id">아이디</label>
+                <p><input type="text" id="id" placeholder="아이디"></p>
+                <div id="id1"><a href="#">중복확인</a></div>
+                <label class="skip" for="pwd1">비밀번호</label>
+                <p><input type="password" id="pwd1" maxlength="10" placeholder="비밀번호"><br></p>
+                <label class="skip" for="pwd2">비밀번호확인</label>
+                <p><input type="password" id="pwd2" maxlength="10" placeholder="비밀번호 확인"><br></p>
+                <label class="skip" for="text">이름</label>
+                <p><input type="text" id="text" placeholder="이름"><br></p>
+                <label class="skip" for="placeholder">전화번호</label>
+                <p><input type="tel" id="ph" maxlength="10" placeholder="전화번호"><br></p>
+                <label class="skip" for="email">이메일</label>
+                <p><input type="email" id="email" placeholder="이메일"><br></p>
+                <div id="id2"><a href="#">주소확인</a></div>
+                <label class="skip" for="address">주소</label>
+                <p><input type="text" id="address" placeholder="주소"><br></p>
+                <label class="skip" for="address1">상세주소</label>
+                <p><input type="text" id="address1" placeholder="상세주소"></p>
+                <div id="button" class="cf">
+                    <input type="submit" value="가입" onclick="return false">
+                    <input type="reset" value="취소" onclick="return false">
+                </div>
+            </div>
+        </form>
+    </fieldset>
+    <footer id="footer">
+        <div class="foot1 cf">
+            <div>
+                <p class="txt1">고객문의 대표전화</p>
+                <p class="txt2">070-4370-7590</p>
+                <p>평일10:00-17:00 <br>주말및공휴일휴무합니다.</p>
+            </div>
+            <div class="foot_right">
+                <p class="txt1">입금계좌안내</p>
+                <p>기업은행</p>
+                <p>551-123456-1-001</p>
+                <p>예금주(주)트렌드아이</p>
+            </div>
+        </div>
+        <div class="foot2">
+            <p>법인명 : 더블유드레스룸 대표자 : 김신영 사업자 등록번호 : 211-87-19565 통신판매업 신고 :
+                제 2015-서울강동-0620 호 대표전화 : 02-511-5301 팩스 :02-511-5302 </p>
+            <p> 주소 :서울특별시 성동구 성수일로 10 (성수동1가) 서울숲ITCT지식산업센터 305호 </p>
+            <p> 개인정보관리책임자 이성준</p>
+            <p> OVERSEA DEPARTMENT : GENERAL MANAGER: ROY RYU Email: ryu@trend-i.net</p>
+            <p> W.DRESSROOM USA BLANC DE BODY TIGER LABCopyright© 2020 더블유드레스룸. All Rights Reserved.</p>
+        </div>
+        <ul class="foot3">
+            <li><a href="#">회사소개</a></li>
+            <li><a href="#">이용안내</a></li>
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#">개인정보취금방침</a></li>
+        </ul>
+    </footer>
+
+</body>
+
+</html>

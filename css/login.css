@@ -1,0 +1,132 @@
+@charset "utf-8";
+
+*,
+*:after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    background: #e0dfdd;
+}
+/* header 시작 */
+.header {
+    width: 100%;
+    margin: 0 auto;
+    height: 60px;
+    background: #fff;
+    position: relative;
+    box-shadow: 0 0 3px 0 #333;
+}
+
+.header img {
+    width: 30px;
+}
+
+.header .back {
+    position: absolute;
+    left: 10px;
+    top: 15px;
+}
+
+.header .cross {
+    position: absolute;
+    right: 10px;
+    top: 15px;
+}
+
+.header h3 {
+    text-align: center;
+    line-height: 60px;
+    letter-spacing: 0.2rem;
+    font-size: 1.1rem;
+}
+
+
+/* header 끝 */
+
+/* box 시작 */
+.box {
+    position: fixed;
+    left: 50%;
+    top: 30%;
+    width: 270px
+    px;
+    transform: translate(-50%, -30%);
+    background: #fff;
+    padding: 2.5rem;
+}
+
+.box h3 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.box h3 img {
+    width: 185px;
+}
+
+form p {
+    border-bottom: 1px solid #000;
+    margin-bottom: 2rem;
+    padding-bottom: 3px;
+    
+}
+
+input[type=text],
+input[type=password] {
+    width: 100%;
+    appearance: none;
+    border: none;
+    font-size: 1rem;
+    outline: none;
+}
+
+input[type=submit] {
+    width: 100%;
+    border: none;
+    background: #e0dfdd;
+    font-size: 1rem;
+    height: 30px;
+    line-height: 30px;
+    margin-bottom: 15px;
+}
+
+input[type=submit]:hover {
+    background: #50504f;
+    color: #fff;
+    font-weight: bold;
+}
+
+.txt1{
+    width: 100%;
+}
+
+.txt1 li {
+    border-right: 1px solid #999;
+    float: left;
+    width: 33%;
+    font-size: 0.6rem;
+}
+
+.txt1 li:nth-child(3){
+    border-right: 0
+}
+
+.txt1 li a:hover {
+    font-weight: bold;
+    color: #50504f;
+}
+
+a {
+    text-decoration: none;
+    color: #999;
+    display: block;
+    text-align: center;
+    margin-left: 5px;
+}
+
+.txt1 li:last-child a {
+    margin-left: 0;
+}
+/* box 끝 */

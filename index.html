@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/ani.css">
+    <link rel="shortcut icon" href="image/favicon.png">
+    <script src="./js/jquery-1.11.2.min.js"></script>
+    <script src="js/jquery.bxslider.min.js"></script>
+    <script src="js/jquery.scrollTo.min.js"></script>
+    <script src="js/mobile_hamburger.js"></script>
+    <script src="js/hamburger_modal.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/mobile_main.js"></script>
+
+</head>
+
+<!-- href="javjscript:;"" 하면 위로 올라가는걸 막아줌 -->
+
+<body>
+    <div class="skip">
+        <a href="#gnb">메뉴바로가기</a>
+        <a href="#container">콘텐츠바로가기</a>
+    </div>
+    <header>
+        <h1><a href="mobile.html"><img src="image/logo.png" alt="LOGO"></a></h1>
+        <div class="hamburger"><img src="image/ham.png" alt="햄버거버튼"></div>
+        <ul class="nav cf">
+            <li>
+                <a href="#">
+                    <img src="image/s.png" alt="search">
+                </a>
+            </li>
+            <li>
+                <a href="login.html">
+                    <img src="image/l.png" alt="login">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="image/my.png" alt="mypage">
+                </a>
+            </li>
+        </ul>
+    </header>
+    <div class="top">
+        <a href="#"><img src="image/TOP.png" alt="상단으로 이동"></a>
+    </div>
+    <div class="modal_back"></div>
+    <nav id="gnb">
+
+        <div class="box">
+            <a href="mobile.html"><img src="image/logo.png" alt="logo"></a>
+            <ul class="cf">
+                <li><a href="login.html">로그인</a></li>
+                <li><a href="member.html">회원가입</a></li>
+            </ul>
+        </div>
+        <ul class="menu1 cf">
+            <li>
+                <a href="#">BRAND
+                    <img class="open" src="image/down.png" alt="menu open">
+                </a>
+                <ul class="sub">
+                    <li><a href="#">브랜드 소개</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">SHOP
+                    <img class="open" src="image/down.png" alt="menu open">
+                </a>
+                <ul class="sub">
+                    <li><a href="#">핸드뷰티</a></li>
+                    <li><a href="list.html">향기뷰티</a></li>
+                    <li><a href="#">헤어&amp;바디</a></li>
+                    <li><a href="#">홈&amp;리빙</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">EVENT
+                    <img class="open" src="image/down.png" alt="menu open">
+                </a>
+                <ul class="sub">
+                    <li><a href="#">선물추천</a></li>
+                    <li><a href="#">할인혜택</a></li>
+                    <li><a href="#">진행중인 이벤트</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">REVIEW
+                    <img class="open" src="image/down.png" alt="menu open">
+                </a>
+                <ul class="sub">
+                    <li><a href="#">PHOTO REVIEW</a></li>
+                    <li><a href="#">BEST REVIEW</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">COMMUNITY
+                    <img class="open" src="image/down.png" alt="menu open">
+                </a>
+                <ul class="sub">
+                    <li><a href="#">NOTICE</a></li>
+                    <li><a href="#">1:1 문의</a></li>
+                </ul>
+            </li>
+        </ul>
+
+    </nav>
+    <div id="main">
+        <div id="arrow" class="cf">
+            <p class="prev"><a href="#"><img src="image/arrow_L.png" alt="prev"></a></p>
+            <p class="next"><a href="#"><img src="image/arrow_R.png" alt="next"></a></p>
+        </div>
+        <ul class="cf">
+            <li><img src="image/main1.png" alt="main1"></li>
+            <li><img src="image/main2.png" alt="main2"></li>
+            <li><img src="image/main3.png" alt="main3"></li>
+            <li><img src="image/main4.png" alt="main4"></li>
+            <li><img src="image/main5.png" alt="main5"></li>
+        </ul>
+        <div id="roll" class="cf">
+            <p id="btn0"><a class="on" href="#"></a></p>
+            <p id="btn1"><a href="#"></a></p>
+            <p id="btn2"><a href="#"></a></p>
+            <p id="btn3"><a href="#"></a></p>
+            <p id="btn4"><a href="#"></a></p>
+        </div>
+    </div>
+    <ul class="nav2">
+        <li><a href="#">라이프 퍼퓸</a></li>
+        <li><a href="#">드레스 퍼퓸</a></li>
+        <li><a href="#">퍼퓸 디퓨저</a></li>
+        <li><a href="#">핸드뷰티</a></li>
+        <li><a href="list.html">향기뷰티</a></li>
+        <li><a href="#">헤어&amp;바디</a></li>
+    </ul>
+
+    <section id="container">
+        <h3>NEW &amp; BEST</h3>
+        <ul>
+            <li>
+                <a href="page.html">
+                    <div class="hover1">
+                        <img src="image/m7.jpg" alt="list">
+                        <div class="text">
+                            <span>[1+1]</span>
+                            <span>드레스퍼퓸 150ml (25종 택2)</span>
+                        </div>
+                    </div>
+                    <span class="txt">30,000원</span>
+                    <span>13,900원</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="hover1">
+                        <img src="image/m8.jpg" alt="list">
+                        <div class="text">
+                            <span>[1+1]탈모 증상 완화</span>
+                            <span>아로마 네이처 샴푸 1L (2종 택2)</span>
+                        </div>
+                    </div>
+                    <span class="txt">50,000원</span>
+                    <span>18,800원</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="hover1">
+                        <img src="image/m1.jpg" alt="list">
+                        <div class="text">
+                            <span>네추럴 라이프 핸드크림</span>
+                            <span>휘그우디50ml</span>
+                        </div>
+                    </div>
+                    <span class="txt">15,900원</span>
+                    <span>12,800원</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="hover1">
+                        <img src="image/m3.jpg" alt="list">
+                        <div class="text">
+                            <span>센트 큐브박스⑨</span>
+                            <span>드레스퍼퓸9종GIFT SET</span>
+                        </div>
+                    </div>
+                    <span class="txt">56,000원</span>
+                    <span>29,900원</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="hover1">
+                        <img src="image/m9.jpg" alt="list">
+                        <div class="text">
+                            <span>[브랜드 이벤트 특가]</span>
+                            <span>[1+1]모이스처라이징 퍼퓸</span>
+                            <span>바디워시&바디로션</span>
+                            <span>500ml(8종 택2)</span>
+                        </div>
+                    </div>
+                    <span class="txt">50,000원</span>
+                    <span>24,900원</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="hover1">
+                        <img src="image/m10.jpg" alt="list">
+                        <div class="text">
+                            <span>[1+1퍼퓸 핸드크림</span>
+                            <span>50ml (10종 택2)</span>
+                        </div>
+                    </div>
+                    <span class="txt">24,000원</span>
+                    <span>12,900원</span>
+                </a>
+            </li>
+        </ul>
+        <div class="more cf">
+            <a href="#"><span>더보기</span></a>
+            <a href="#"><img src="image/down.png" alt="더보기버튼"></a>
+        </div>
+    </section>
+    <section class="brand">
+        <img src="image/b.png" alt="브랜드소개">
+        <ul class="text2">
+            <li class="txt1">Find your colorful scents</li>
+            <li class="txt2">향기, 뷰티가 되다</li>
+            <li class="txt3">
+                <p>향기 뷰티의 시작, 더블유드레스룸</p>
+                <p>그날의 패션과 감성에 어울리는 향기로 일상의 가치를 높여줍니다.</p>
+                <p>일상 속 감성을 완성하는 향기가 선사하는 즐거움을 느껴보세요.</p>
+            </li>
+        </ul>
+    </section>
+    <section class="list2">
+        <h3>EVENT</h3>
+        <div class="ban">
+            <img src="image/event1.png" alt="ban">
+            <img src="image/event2.png" alt="ban">
+            <img src="image/event3.png" alt="ban">
+        </div>
+    </section>
+    <section id="container">
+        <h3>추천상품</h3>
+        <ul>
+            <li>
+                <a href="#">
+                    <div class="hover1">
+                        <img src="image/m6.png" alt="list">
+                        <div class="text">
+                            <span>퍼퓸 디퓨저 탈취제 3종 SET</span>
+                            <span>(디퓨저탈취제 110g*3ea)</span>
+                        </div>
+                    </div>
+                    <span class="txt">21,000원</span>
+                    <span>13,900원</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="hover1">
+                        <img src="image/m5.png" alt="list">
+                        <div class="text">
+                            <span>퍼퓸 디퓨저 3종 SET</span>
+                            <span>(디퓨저 120ml*3ea)</span>
+                        </div>
+                    </div>
+                    <span class="txt">50,000원</span>
+                    <span>18,800원</span>
+                </a>
+            </li>
+        </ul>
+        <div class="more">
+            <a href="#"><span>더보기</span></a>
+            <a href="#"><img src="image/down.png" alt="더보기버튼"></a>
+        </div>
+    </section>
+    <section id="container">
+        <h3>관심상품</h3>
+        <ul>
+            <li>
+                <a href="#">
+                    <div class="hover1">
+                        <img src="image/m4.jpg" alt="list">
+                        <div class="text">
+                            <span>하이파이브 GIFT SET</span>
+                            <span>(드레스퍼퓸 30ml 5종)</span>
+                        </div>
+                    </div>
+                    <span class="txt">24,000원</span>
+                    <span>21,900원</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="hover1">
+                        <img src="image/m10.jpg" alt="list">
+                        <div class="text">
+                            <span>[1+1퍼퓸 핸드크림</span>
+                            <span>50ml (10종 택2)</span>
+                        </div>
+                    </div>
+                    <span class="txt">24,000원</span>
+                    <span>12,900원</span>
+                </a>
+            </li>
+        </ul>
+        <div class="more">
+            <a href="#"><span>더보기</span></a>
+            <a href="#"><img src="image/down.png" alt="더보기버튼"></a>
+        </div>
+    </section>
+    <section class="video">
+        <div class="videoContainer">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/da2_Nqy9E5Y"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </div>
+    </section>
+    <section class="brand2">
+        <ul class="text3">
+            <li class="txt4">향기로 기억되는 추억</li>
+            <li class="txt5">Scent of...</li>
+            <li class="txt6">
+                <p>풀향기일까? 비누향일까? 마음을 설레게 한 건.</p>
+                <p>흔들리는 꽃들, 뒤섞이는 파도, 젖은 공기, 우리 추억의 파편들.</p>
+                <p>복숭아, 달콤한 입술, 짜릿한 터치. 그리고… 10가지 기억.</p>
+                <p>더블유드레스룸은 향기로 추억을 기억하게 합니다.</p>
+            </li>
+        </ul>
+    </section>
+    <section class="list3">
+        <h3>REVIEW</h3>
+        <div class="ban2">
+            <ul>
+                <li><a href="#"><img src="image/review1.jpg" alt="ban"></a></li>
+                <li><a href="#"><img src="image/review2.jpg" alt="ban"></a></li>
+                <li><a href="#"><img src="image/review3.jpg" alt="ban"></a></li>
+                <li><a href="#"><img src="image/review4.jpg" alt="ban"></a></li>
+                <li><a href="#"><img src="image/review5.jpg" alt="ban"></a></li>
+                <li><a href="#"><img src="image/review6.jpg" alt="ban"></a></li>
+            </ul>
+        </div>
+        <div class="more">
+            <a href="#"><span>더보기</span></a>
+            <a href="#"><img src="image/down.png" alt="더보기버튼"></a>
+        </div>
+    </section>
+    <ul class="nav3">
+        <li><a href="#">공지사항</a></li>
+        <li><a href="#">게시판</a></li>
+        <li><a href="#">입고지연</a></li>
+    </ul>
+    <footer id="footer">
+        <div class="foot1">
+            <div>
+                <p class="txt7">고객문의 대표전화</p>
+                <p class="txt8">070-4370-7590</p>
+                <p>평일10:00-17:00 <br>주말및공휴일휴무합니다.</p>
+            </div>
+            <div>
+                <p class="txt7">입금계좌안내</p>
+                <p>기업은행</p>
+                <p>551-123456-1-001</p>
+                <p>예금주(주)트렌드아이</p>
+            </div>
+        </div>
+        <div class="foot2">
+            <p>법인명 : 더블유드레스룸 대표자 : 김신영 사업자 등록번호 : 211-87-19565 통신판매업 신고 :
+                제 2015-서울강동-0620 호 대표전화 : 02-511-5301 팩스 :02-511-5302 </p>
+            <p> 주소 :서울특별시 성동구 성수일로 10 (성수동1가) 서울숲ITCT지식산업센터 305호 </p>
+            <p> 개인정보관리책임자 이성준</p>
+            <p> OVERSEA DEPARTMENT : GENERAL MANAGER: ROY RYU Email: ryu@trend-i.net</p>
+            <p> W.DRESSROOM USA BLANC DE BODY TIGER LABCopyright© 2020 더블유드레스룸. All Rights Reserved.</p>
+        </div>
+        <ul class="foot3">
+            <li><a href="#">회사소개</a></li>
+            <li><a href="#">이용안내</a></li>
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#">개인정보취금방침</a></li>
+        </ul>
+    </footer>
+    <!-- <script src="./js/mobile.js"></script> -->
+</body>
+
+</html>

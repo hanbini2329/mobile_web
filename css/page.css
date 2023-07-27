@@ -1,0 +1,480 @@
+@charset "utf-8";
+
+*,
+*:after,
+*::before {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* header시작 */
+header {
+    width: 100%;
+    position: fixed;
+    background: #fff;
+    height: 60px;
+    line-height: 60px;
+    z-index: 10;
+    box-shadow: 0 0 3px 0 #333;
+}
+
+header h1 {
+    height: 100%;
+    text-align: center;
+}
+
+header h1 a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding-top: 5px;
+}
+
+.icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.icon li {
+    float: left;
+    margin-right: 5px;
+}
+
+.icon li:last-child {
+    margin-right: 0;
+}
+
+.icon li a img {
+    width: 20px;
+}
+
+.hamburger {
+    position: absolute;
+    top: 6px;
+    left: 20px;
+}
+.hamburger img {
+    width: 30px;
+}
+
+/* header끝 */
+
+/* top 아이콘 */
+.top {
+    position: fixed;
+    bottom: 25px;
+    right: 10px;
+    z-index: 999;
+}
+
+.top img {
+    width: 45px;
+}
+/* top 아이콘 끝 */
+
+/* menu 시작 */
+
+#gnb {
+    background: #fff;
+    position: fixed;
+    width: 75%;
+    height: 100%;
+    top: 0;
+    font-size: 0.9rem;
+    left: -75%;
+    /* 메뉴보이게 */
+    z-index: 100;
+}
+
+.box {
+    background: #e0dfdd;
+    width: 75%;
+    margin: 60px auto;
+    height: 150px;
+    position: relative;
+}
+
+.box a img {
+    width: 170px;
+    margin-top: 40px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.box ul {
+    width: 90%;
+    height: 25px;
+    margin: 0 auto;
+    padding-top: 105px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 15px;
+}
+
+.box ul li {
+    background: #fff;
+    text-align: center;
+    line-height: 25px;
+}
+
+.box ul li a {
+    font-size: 0.7rem;
+    font-weight: bold;
+}
+
+.menu1 {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: repeat(autofit 5, 1fr);
+}
+
+.menu1 li {
+    padding: 10px 20px;
+}
+
+.menu1>li>a {
+    display: block;
+    width: 100%;
+    position: relative;
+    font-weight: bold;
+}
+
+.menu1 li a img {
+    width: 15px;
+    right: 0;
+    position: absolute;
+    top: 1.5px;
+}
+
+.sub {
+    display: none;
+}
+
+.sub li a {
+    display: block;
+    color: #9b9b9b;
+    font-size: 0.75rem;
+}
+
+.sub li a:hover {
+    color: #50504f;
+    font-weight: bold;
+}
+
+/* menu 끝 */
+
+/* main 시작 */
+.main {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 6rem;
+}
+
+.main h4 {
+    text-align: center;
+    margin-bottom: 1.2rem;
+    font-weight: normal;
+}
+
+.main img {
+    width: 100%;
+}
+
+.review {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 5px;
+    padding-bottom: 3rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 10px;
+}
+
+.box1 {
+    border: 2px solid #999;
+    height: 100%;
+    position: relative;
+}
+
+.box1 div {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.box1 span {
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+
+.txt1 {
+    font-size: 0.7rem;
+    margin-top: 10px;
+    color: #50504f;
+    font-weight: bold;
+}
+
+.txt2 {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.star {
+    width: 60%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+}
+
+.star img {
+    margin-top: 5px;
+    width: 100%;
+}
+/* main 끝 */
+
+/* box1 시작 */
+.l1 {
+    width: 60%;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-row-gap: 15px;
+    font-size: 0.9rem;
+    margin-left: 25px;
+}
+
+.l1 li {
+    font-weight: bold;
+    color: #50504f;
+}
+
+.l1 .red {
+    color: red;
+}
+
+.l1 .line {
+    text-decoration: line-through;
+}
+/* box1 끝 */
+
+/* search  시작 */
+.search {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.search p {
+    margin-top: 15px;
+    font-size: 0.8rem;
+    height: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    color: #50504f;
+}
+
+.search p select {
+    float: right;
+    width: 85%;
+    height: 30px;
+    border: 1px solid #999;
+    border-radius: 3px;
+    outline: none;
+}
+/* search  끝 */
+
+/* button 시작 */
+.button {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.button input {
+    width: 30%;
+    height: 30px;
+    border: 1px solid #999;
+    border-radius: 3px;
+    font-size: 0.8rem;
+    background: none;
+    color: #50504f;
+    cursor: pointer;
+}
+
+.button .point {
+    background: #50504f;
+    border-radius: 3px;
+    color: #fff;
+}
+/* button 끝 */
+
+/* list 시작 */
+.list {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+
+.list ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    text-align: center;
+    font-size: 0.7rem;
+}
+
+.list ul li {
+    border-bottom: 1px solid #e0dfdd;
+    height: 30px;
+    line-height: 30px;
+}
+
+.list ul li a {
+    font-weight: bold;
+    color: #999;
+}
+
+.list ul li.on a{
+    color: #50504f;
+}
+/* list 끝 */
+
+/* list1 시작 */
+.list1 {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 4rem;
+}
+
+.list1 img {
+    width: 100%;
+}
+
+.list1 ul li {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.list1 ul li::before {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    content: "";
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.3)100%);
+    transform: skew(-25deg);
+}
+
+.list1 ul li:hover:before {
+    animation: shine 0.8s;
+}
+
+@keyframes shine {
+    100% {
+        left: 125%;
+    }
+}
+/* list1 끝 */
+
+/* nav3 시작 */
+.nav3 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    text-align: center;
+    height: 23px;
+    line-height: 23px;
+    font-size: 0.75rem;
+    border-top: 1px solid #50504f;
+}
+
+.nav3 li {
+    border-right: 1px solid #50504f;
+}
+
+.nav3 li:last-child {
+    border-right: 0;
+}
+
+/* nav3 끝 */
+
+/* footer 시작 */
+#footer {
+    background: #000;
+    color: #50504f;
+    font-size: 0.7rem;
+    width: 100%;
+    padding: 3rem 0 2rem 0;
+}
+
+.foot1 {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.foot1 div {
+    margin-bottom: 8px;
+}
+
+.foot1 div p {
+    margin-bottom: 5px;
+}
+
+.txt3 {
+    font-weight: bold;
+    color: #fff;
+}
+
+.txt4 {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.foot2 {
+    width: 85%;
+    margin: 0 auto;
+    padding-top: 1.5rem;
+}
+
+.foot2 p {
+    margin-bottom: 8px;
+}
+
+.foot3 {
+    width: 86%;
+    margin: 0 auto;
+    padding-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+}
+
+.foot3 li a {
+    color: #50504f;
+    letter-spacing: 3px;
+    font-size: 0.6rem;
+}
+
+.foot3 li:last-child a {
+    letter-spacing: 0;
+}
+/* footer 끝 */

@@ -1,0 +1,200 @@
+@charset "utf-8";
+
+*,
+*:after,
+*::before {
+    box-sizing: border-box;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: #999;
+    font-size: 0.7rem;
+    border: 1px solid #999;
+    padding: 4px;
+}
+/* header 시작 */
+.header {
+    width: 100%;
+    margin: 0 auto;
+    height: 60px;
+    background: #fff;
+    position: relative;
+    box-shadow: 0 0 3px 0 #333;
+}
+
+.header a {
+    border: none;
+}
+
+.header a:hover {
+    background: none;
+}
+
+.header img {
+    width: 30px;
+}
+
+.header .back {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+.header .cross {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.header h3 {
+    text-align: center;
+    line-height: 60px;
+    letter-spacing: 0.2rem;
+    font-size: 1.1rem;
+}
+
+/* header 끝 */
+
+/* box 시작 */
+.box {
+    margin: 4rem auto;
+    width: 250px;
+    padding-bottom: 8rem;
+}
+
+.join {
+    width: 100%;
+    position: relative;
+}
+
+.join p {
+    width: 98%;
+    border-bottom: 1px solid #000;
+    margin: 0.5rem 0 1.5rem 0;
+    padding-bottom: 3px;
+}
+
+.join input {
+    width: 98%;
+    appearance: none;
+    border: none;
+    font-size: 1rem;
+    color: #999;
+    outline: none;
+}
+
+#id1 {
+    position: absolute;
+    right: 5px;
+    top: 0;
+}
+
+#id2 {
+    position: absolute;
+    right: 5px;
+}
+
+a:hover {
+    background: #e0dfdd;
+    border: none;
+    font-weight: bold;
+    color: #000;
+}
+
+#button {
+    width: 100%;
+}
+
+#button input {
+    width: 48.5%;
+    margin: 0 auto;
+    float: left;
+    margin-right: 5px;
+    border: none;
+    height: 30px;
+    color: #000;
+    background: #e0dfdd;
+}
+
+#button input:nth-child(2){
+    margin-right: 0;
+}
+
+#button input:hover {
+    background: #50504f;
+    color: #fff;
+    font-weight: bold;
+}
+/* box 끝 */
+
+/* footer 시작 */
+#footer {
+    background: #000;
+    color: #50504f;
+    font-size: 0.7rem;
+    width: 100%;
+    padding: 3rem 0 2rem 0;
+}
+
+.foot1 {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin-bottom: 8px;
+}
+
+.foot1 div p {
+    margin-bottom: 5px;
+}
+
+.txt1 {
+    font-weight: bold;
+    color: #fff;
+}
+
+.txt2 {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.foot2 {
+    width: 85%;
+    margin: 0 auto;
+    padding-top: 1.5rem;
+}
+
+.foot2 p {
+    margin-bottom: 8px;
+}
+
+.foot3 {
+    width: 86%;
+    margin: 0 auto;
+    padding-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+}
+
+.foot3 li a {
+    border: none;
+    color: #50504f;
+    letter-spacing: 3px;
+    font-size: 0.6rem;
+    padding: 0;
+}
+
+.foot3 a:hover {
+    background: none;
+    font-weight: normal;
+}
+
+.foot3 li:last-child a {
+    letter-spacing: 0;
+}
+/* footer 끝 */

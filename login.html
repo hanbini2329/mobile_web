@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="shortcut icon" href="image/favicon.png">
+</head>
+<body>
+    <header class="header">
+        <a href="mobile.html" class="back"><img src="image/back.png" alt="뒤로가기 버튼"></a>
+        <h3>로그인</h3>
+        <a href="mobile.html" class="cross"><img src="image/cross.png" alt="닫기 버튼"></a>
+    </header>
+    <fieldset class="box">
+        <legend class="skip">로그인</legend>
+        <h3><a href="#"><img src="image/logo.png" alt="logo"></a></h3>
+        <form action="send" method="post">
+            <label class="skip" for="id">아이디</label>
+            <p><input type="text" id="id" required placeholder="아이디"></p>
+            <label class="skip" for="pwd">비밀번호</label>
+            <p><input type="password" id="pwd" required placeholder="비밀번호"></p>
+            <input type="submit" value="로그인" onclick="return false">
+            <ul class="txt1 cf">
+                <li><a href="member.html">회원가입</a></li>
+                <li><a href="#">아이디찾기</a></li>
+                <li><a href="#">비밀번호찾기</a></li>
+            </ul>    
+        </form>
+    </fieldset>
+    
+</body>
+</html>
